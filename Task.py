@@ -17,7 +17,7 @@ def load_and_process_data(file_path):
 
 def main():
     parser = argparse.ArgumentParser(description="Process and sort generals by aWAR.")
-    parser.add_argument("file_path", type=str, help="Path to the CSV file containing the generals' performance data")
+    parser.add_argument("file_path", type=str, help="file containing Generals data")
     args = parser.parse_args()
       df_sorted = load_and_process_data(file_path)
     print(df_sorted)
