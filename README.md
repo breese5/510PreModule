@@ -38,5 +38,5 @@ aWAR: Adjusted Wins Above Replacement, a measure of the general's contribution p
 3) To process the data, run: process_generals Generals_Performance.csv
 4) To run the unit test, run: test_generals
 
-##Ending
+
 That's all! I hope you enjoy using this simple processing tool.
