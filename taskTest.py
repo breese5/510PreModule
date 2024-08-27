@@ -37,6 +37,8 @@ General E,2,1.5,0.4"""
 
         # Final double check that outcome matches the expected outcome
         pd.testing.assert_frame_equal(df_sorted.reset_index(drop=True), self.expected_data)
-
-if __name__ == '__main__':
+#For Command Line Tool
+def main():
     unittest.main()
+if __name__ == '__main__':
+    main()
