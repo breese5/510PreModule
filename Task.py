@@ -1,4 +1,5 @@
 import pandas as pd
+import argparse
 
 def load_and_process_data(file_path):
     # issue with first row and syntax was occuring so code to get the data to load correctly w/ right columns
@@ -14,8 +15,14 @@ def load_and_process_data(file_path):
     
     return df_sorted
 
-if __name__ == "__main__":
-    file_path = 'Generals_Performance.csv'
-    df_sorted = load_and_process_data(file_path)
+def main():
+    parser = argparse.ArgumentParser(description="Process and sort generals by aWAR.")
+    parser.add_argument("file_path", type=str, help="Path to the CSV file containing the generals' performance data")
+    args = parser.parse_args()
+      df_sorted = load_and_process_data(file_path)
     print(df_sorted)
+
+if __name__ == "__main__":
+    main()
+  
 
