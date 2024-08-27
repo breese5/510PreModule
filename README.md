@@ -40,3 +40,4 @@ aWAR: Adjusted Wins Above Replacement, a measure of the general's contribution p
 
 
 That's all! I hope you enjoy using this simple processing tool.
+Author: Bryant Reese
