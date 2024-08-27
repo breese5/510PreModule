@@ -39,6 +39,10 @@ General E,2,1.5,0.4"""
         pd.testing.assert_frame_equal(df_sorted.reset_index(drop=True), self.expected_data)
 #For Command Line Tool
 def main():
-    unittest.main()
+    #explicit loading for tests added because for some reason command line was not picking up the test originally
+    loader = unittest.TestLoader()
+    suite = loader.loadTestsFromTestCase(TestLoadAndProcessData)
+    runner = unittest.TextTestRunner()
+    runner.run(suite)
 if __name__ == '__main__':
     main()
