@@ -9,7 +9,7 @@ This tool processes a CSV file containing generals' battle performance data and 
 
 ## Requirements
 
-- Python 3.6 or higher
+- Tested using Python 3.11.1
 - pandas
 
 ## Installation
